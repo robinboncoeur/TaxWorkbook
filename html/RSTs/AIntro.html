@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Tax Workbook 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tax Workbook - Worksheets" href="BSheets.html" />
+    <link rel="prev" title="The Tax Workbook Guide" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Tax Workbook
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-tax-workbook-guide">The Tax Workbook Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#worksheets-overview">Worksheets Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#functionality">Functionality</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-best-use-help">How to Best Use Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#from-the-menu">From The Menu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BSheets.html">Tax Workbook - Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CCode.html">The Code Running The Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DInterface.html">The Code Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ELicence.html">Licence Agreement</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Tax Workbook</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/RSTs/AIntro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-tax-workbook-guide">
+<h2>The Tax Workbook Guide<a class="headerlink" href="#the-tax-workbook-guide" title="Permalink to this headline">¶</a></h2>
+<p>This Excel-based utility is designed to manage creating and maintaining Banking Transactions Data for Tax Purposes in spreadsheet form. The workbook contains both data inported from CSV files as well as (much less frequently) data manually entered from PDFs, such as rental property repair details.</p>
+<p>It replaces a manually-managed ledger approach to tax-data figures. The tax accountant requested an income and expenditures summary worksheet in Excel. Using the power of Excel and VBA, downloaded CSV files populate the Accounts Worksheets, which inform fields on the Summary Sheet through links: this happens  dynamically.</p>
+<p>This Tax Workbook is a living document. At the end of the fiscal year, it is submitted to the tax accountant.</p>
+<div class="section" id="worksheets-overview">
+<h3>Worksheets Overview<a class="headerlink" href="#worksheets-overview" title="Permalink to this headline">¶</a></h3>
+<p>This workbook contains transaction data from primarily ANZ bank accounts. On most of the worksheets, the data is categorised through codes:</p>
+<img alt="../_images/tw01Codes01.png" src="../_images/tw01Codes01.png" />
+<p>A simple =SUMIF() tallies up Transaction Categories based on those codes in column D:</p>
+<img alt="../_images/tw01Codes02.png" src="../_images/tw01Codes02.png" />
+<p>Using the Credit Card worksheet as an example, the codes in column D are assigned via Excel 2016 Visual-Basic for Applications functions (VBA), copied from the <strong>ClassCC Worksheet</strong> which has an instance of the Transaction Target and the associated code:</p>
+<img alt="../_images/tw01Codes03.png" src="../_images/tw01Codes03.png" />
+<p>The software that copies the Transaction Code from the ClassCC sheet to the 568CredCard sheet is run from <strong>Tax Workbook</strong> menu option under the main menu option Tax Workbook:</p>
+<img alt="../_images/tw01Codes04.png" src="../_images/tw01Codes04.png" />
+<p>Much of the workbook’s data is managed in this fashion.</p>
+</div>
+<div class="section" id="functionality">
+<h3>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h3>
+<p>When “Tax Workbook” is first opened in Excel, security settings commonly set by organisations may issue a security warning:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Some active content has been disabled. Click for more details.</em></p></li>
+</ul>
+</div></blockquote>
+<p>Next to this warning is a button labelled <strong>[Enable Content]</strong>. While the spreadsheet’s data can be viewed without “enabling content”, the menu and other features in this workbook will only run if the content is enabled. The only needs to be done once.</p>
+</div>
+</div>
+<div class="section" id="how-to-best-use-help">
+<h2>How to Best Use Help<a class="headerlink" href="#how-to-best-use-help" title="Permalink to this headline">¶</a></h2>
+<p>This Help file pertains to TaxWkbk 2021, version 0.6 (v0.6).</p>
+<p>While Tax Workbook’s use seems pretty straight-forward to the developer, he realises that his approach to running software could differ wildly to other inhabitants of the solar system run software: hence, this Help file.</p>
+<p>Why this approach to a Help file? See the footnote <a class="footnote-reference brackets" href="#fhlp01" id="id1">1</a>.</p>
+<div class="section" id="from-the-menu">
+<h3>From The Menu<a class="headerlink" href="#from-the-menu" title="Permalink to this headline">¶</a></h3>
+<p>When this workbook loads, it includes a special Menu option – next to “Help” – called “Tax Workbook”:</p>
+<img alt="../_images/tw01Codes04.png" src="../_images/tw01Codes04.png" />
+<p>Help, much like the rest of the document is a work-in-progress, so all topics may not be covered.</p>
+<p>The same goes for the VBA code: it works 99% of the time, but every now and then, the VBA gremlins interfere.</p>
+<blockquote>
+<div><p class="rubric">Notes</p>
+<dl class="footnote brackets">
+<dt class="label" id="fhlp01"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>As Microsoft in their wisdom didn’t see fit to include a means to provide a very flexible custom help documentation system without installing questionable add-ons - something most security-conscious IT departments of organisations would definitely never permit - a method of sharing help information had to be come up with that would provide that information quickly, consistently and accurately. Therefore, I have chosen HTML (think: Web) pages for documenting Help. The degree of success in finding help in these pages depends on how the user generally searches for help on a computer, but I would suggest this approach.</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="BSheets.html" class="btn btn-neutral float-right" title="Tax Workbook - Worksheets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="The Tax Workbook Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Robyn Hahn
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
