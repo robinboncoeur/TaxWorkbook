@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Code Running The Workbook &mdash; Tax Workbook 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Code Page" href="DInterface.html" />
+    <link rel="prev" title="Tax Workbook - Worksheets" href="BSheets.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Tax Workbook
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="AIntro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BSheets.html">Tax Workbook - Worksheets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Code Running The Workbook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#find-name-in-list">Find Name in List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#staffer-details">Staffer Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#staffer-role">Staffer Role</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#action-buttons">Action Buttons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#footnotes">Footnotes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="DInterface.html">The Code Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ELicence.html">Licence Agreement</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Tax Workbook</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>The Code Running The Workbook</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/RSTs/CCode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-code-running-the-workbook">
+<h1>The Code Running The Workbook<a class="headerlink" href="#the-code-running-the-workbook" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="find-name-in-list">
+<span id="es-stfname"></span><h2>Find Name in List<a class="headerlink" href="#find-name-in-list" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="staffer-details">
+<span id="es-stfdetails"></span><h2>Staffer Details<a class="headerlink" href="#staffer-details" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong> staff detail information includes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>First Name (“FirstName”)</p></li>
+<li><p>Last Name (“LastName”)</p></li>
+<li><p>Primary phone number (“MainPhone”) <a class="footnote-reference brackets" href="#phone01" id="id1">1</a></p></li>
+<li><p>Role</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="staffer-role">
+<span id="es-stfrole"></span><h3>Staffer Role<a class="headerlink" href="#staffer-role" title="Permalink to this headline">¶</a></h3>
+<p>Role selection is done in the dropdown:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scrub/Scout (“ScrubScout”)</p></li>
+<li><p>Anaes “thetics” (“Anaes”)</p></li>
+<li><p>PACU “Post-op recovery” (“PACU”)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="action-buttons">
+<span id="es-btmbuttons"></span><h3>Action Buttons<a class="headerlink" href="#action-buttons" title="Permalink to this headline">¶</a></h3>
+<p>There are buttons at the bottom of the form consist of five buttons:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The “New” button (“NewStaff”) writes the selections to the Call Sheet.</p></li>
+<li><p>The “Save” button (“SaveStaff”) saves the entry to the “NamesPhones” sheet.</p></li>
+<li><p>The “Cancel” button (“CancelStaff”) cancels the Edit and closes the form without saving.</p></li>
+<li><p>The “Delete” button (“DeleteStaff”) deletes the displayed staff member’s record from the “NamesPhones” sheet.</p></li>
+<li><p>The “Help” button (“ESHelp”) brings up this document, opened on the EditStaff page.</p></li>
+<li><p>The “Close” button (“ESClose”) closes the “Edit Staff” form.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="footnotes">
+<h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p class="rubric">Notes</p>
+<dl class="footnote brackets">
+<dt class="label" id="phone01"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>The individual may elect to have the landline phone as primary phone, or the mobile. Be sure to ask. Also, this may change: as you can see the [Swap] (“Swap”) button makes assigning opposite roles to the phone numbers a trivial task.</p>
+</dd>
+<dt class="label" id="activ02"><span class="brackets">2</span></dt>
+<dd><p>It is suggested to leave the staff member’s record in the “NameAndPhone” sheet as employment status can revert to what it was before he or she left. These things happen, so it’s nice to already have that data there.</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="DInterface.html" class="btn btn-neutral float-right" title="The Code Page" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="BSheets.html" class="btn btn-neutral float-left" title="Tax Workbook - Worksheets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Robyn Hahn
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

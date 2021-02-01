@@ -1,0 +1,71 @@
+#############################
+The Code Running The Workbook
+#############################
+
+
+
+
+
+
+.. _es-stfname:
+
+*****************
+Find Name in List
+*****************
+
+
+
+
+
+.. _es-stfdetails:
+
+***************
+Staffer Details
+***************
+
+**Required** staff detail information includes:
+
+   * First Name ("FirstName")
+   * Last Name ("LastName")
+   * Primary phone number ("MainPhone") [#phone01]_
+   * Role
+   
+
+
+.. _es-stfrole:
+
+Staffer Role
+************
+
+Role selection is done in the dropdown:
+
+   * Scrub/Scout ("ScrubScout")
+   * Anaes "thetics" ("Anaes")
+   * PACU "Post-op recovery" ("PACU")
+
+
+.. _es-btmbuttons:
+
+Action Buttons
+**************
+
+There are buttons at the bottom of the form consist of five buttons:
+
+   * The "New" button ("NewStaff") writes the selections to the Call Sheet.
+   * The "Save" button ("SaveStaff") saves the entry to the "NamesPhones" sheet.
+   * The "Cancel" button ("CancelStaff") cancels the Edit and closes the form without saving.
+   * The "Delete" button ("DeleteStaff") deletes the displayed staff member's record from the "NamesPhones" sheet.
+   * The "Help" button ("ESHelp") brings up this document, opened on the EditStaff page.
+   * The "Close" button ("ESClose") closes the "Edit Staff" form.
+
+
+Footnotes
+*********
+ 
+ .. rubric:: Notes
+   
+ .. [#phone01] The individual may elect to have the landline phone as primary phone, or the mobile. Be sure to ask. Also, this may change: as you can see the [Swap] ("Swap") button makes assigning opposite roles to the phone numbers a trivial task. 
+ 
+ .. [#activ02] It is suggested to leave the staff member's record in the "NameAndPhone" sheet as employment status can revert to what it was before he or she left. These things happen, so it's nice to already have that data there.
+ 
+ 

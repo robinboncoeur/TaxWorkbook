@@ -1,0 +1,33 @@
+#################
+Licence Agreement
+#################
+
+*****************************
+GNU General Public Licence v3
+*****************************
+
+Terms of General Public Licence, version 3:
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public Licence as published by the Free Software Foundation, either version 3 of the Licence, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more details.
+
+You should have received a copy of the GNU General Public Licence along with this programme. If not, see: 
+
+`Full GNU GPL <http://www.gnu.org/licenses>`_  (you will need online access to view this document).
+
+
+****************************
+How to Contact the Developer
+****************************
+
+Whilst software developers endeavour to write clean, robust software with consistent, predictable behaviour, bugs do happen. The TaxWorkbook developer is committed to supporting this workbook, hence this document and a web presence on github.
+
+A number of means exist to contact the developer:
+
+   * gmail: robinseahahn@gmail.com
+   * `github issues page <https://github.com/robinboncoeur/TaxWorkbook/issues>`_
+   
+To find the most current documentation - a (probably) updated version of this document - go to:
+   
+   * `my Github CallSheet page <https://robinboncoeur.github.io/TaxWorkbook/>`_ 
